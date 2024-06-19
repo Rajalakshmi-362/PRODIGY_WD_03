@@ -1,0 +1,97 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/67/144/838/tic-tac-toe-wallpaper-thumb.jpg);
+     background-size:cover;
+h1{
+    text-align: justify;
+    -webkit-text-fill-color: aqua;
+    margin-right: 10px;
+}
+.container {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-top: 0%;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #e079b5;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell.x {
+    background-color: lightblue;
+}
+
+.cell.circle {
+    background-color: lightcoral;
+}
+
+#board.x .cell:hover:not(.x):not(.circle) {
+    background-color: lightblue;
+}
+
+#board.circle .cell:hover:not(.x):not(.circle) {
+    background-color: lightcoral;
+}
+
+.status {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: green;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.image-container {
+    
+    
+        display: flex;
+        justify-content: flex-end;
+        align-items: start;
+        margin-right: 50px;
+        margin-left: 20px; 
+        width:max-content;
+    }
+    
+   
+
+#gameImage {
+    width: 300px;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(14, 17, 15, 0.1);
+}
+
